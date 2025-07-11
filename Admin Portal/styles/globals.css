@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+   min-height: 100vh;
+}
+
+.theme_background {
+    background: linear-gradient(#153b61, #1b4b6b, #1e5e9b);
+}
+
+.text_whitesmoke {
+    color: whitesmoke;
+}
+
+.row {
+    border-top: 15px solid #454545;
+    border-bottom: 15px solid #454545;
+}
+
+.center {
+    @apply flex justify-center items-center;
+}
+
+.glassmorphism_light {
+    @apply rounded-xl border border-gray-300 bg-white/50 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.4)] backdrop-blur p-5;
+}
+
+.glassmorphism_dark {
+    @apply rounded-xl border border-gray-800 bg-black/10 shadow-[inset_10px_-50px_94px_0_rgb(0,0,0,0.4)] backdrop-blur p-5;
+}
+
+.glassmorphism_light_hover {
+    @apply rounded-xl border border-gray-300 bg-white/50 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.4)] backdrop-blur p-5;
+}
+
+.glassmorphism_light_hover:hover {
+    @apply rounded-xl border border-gray-500 bg-green-300/50 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.4)] backdrop-blur p-5;
+}
+
+.form_input {
+    @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-900 outline-0 focus:ring-2 focus:outline-none bg-stone-200;
+}
+
+.ripple:nth-child(1) {
+    --i: 0;
+}
+  
+.ripple:nth-child(2) {
+    --i: 1;
+}
+  
+.ripple:nth-child(3) {
+    --i: 2;
+}
+  
+.ripple:nth-child(4) {
+    --i: 3;
+}
+  
